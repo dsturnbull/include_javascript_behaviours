@@ -1,0 +1,9 @@
+Call include_javascript_behaviours from your layout.
+
+It will output JS include tags for files in public/javascripts that match:
+  * #{controller_name}
+  * #{controller_name}_#{action_name}
+  * _#{controller_name}_#{partial_name} (e.g. if you render partials 'form' and 'panel' you get _messages_form.js and _messages_panel.js)
+
+Initially by Julio Ody <julioody@gmail.com>
+Partials and actions by David Turnbull <dsturnbull@gmail.com>
